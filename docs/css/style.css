@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;900&family=Roboto:wght@100;500;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.navbar {
+    background-color: #F5DD40;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+}
+
+.navbar .logo{
+    width: 60px;
+    height: 60px;
+    grid-column: 2/3;
+}
+
+.navbar .menu {
+    grid-column: 4/7;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar .menu li {
+    list-style: none;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: #181818;
+    cursor: pointer;   
+}
+
+.navbar .menu a:hover {
+    color: #fff;
+}
+
+.navbar .menu-bar {
+    display: none;
+}
+
+.navbar .shoping {
+    grid-column: 8/9;
+}
+
+/* SECTION MAIN */
+
+.person {
+    height: 85vh;
+    background-image: linear-gradient(rgba(16,16,16,.5),rgba(16, 16, 16, .9)), url(../img/person.jpg);
+    background-size: cover;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.person .info-content{
+    grid-column: 7/10;
+    grid-row: 3/7;
+    color: #fff;
+}
+
+.person h3 {
+    font-family: 'Monserrat', 'sans-serif';
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.person h1{
+    font-size: 5em;
+    color: #F5DD40;
+}
+
+.person p {
+    font-weight:  300;
+    font-family: 'Monserrat', 'sans-serif';
+}
+
+.person .btn {
+    font-size: 1em;
+    background: none;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid;
+    border-radius: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.person .btn:hover {
+    color: #F5DD40;
+}
+
+/* SECTION FOOTER */
+
+.footer {
+    display: grid;
+    height: 85px;
+    align-items: center;
+    background-color: #181818;
+    color: #fff;
+    grid-template-areas: 
+    "listen-online follow-me social-network";
+}
+
+.footer .listen-online {
+    grid-template-areas: listen-online;
+    display: flex;
+    justify-content: center;
+    background-color: #F5DD40;
+    padding: 20px;
+    color: #181818;
+}
+
+.footer .listen-online .fa-solid{
+    font-size: 1.5em;
+    margin-right: 15px;
+}
+
+.footer .follow-me {
+    grid-template-areas: follow-me;
+    text-align: center;
+}
+
+.footer .social-network {
+    grid-template-areas: social-network;
+    font-size: 1.3em;
+    color: #F5DD40;
+}
+
+.footer .social-network .fa-brands{
+   margin-right: 15px;
+}
+
+.footer .social-network .fa-brands:hover{
+    color: #fff;
+ }
